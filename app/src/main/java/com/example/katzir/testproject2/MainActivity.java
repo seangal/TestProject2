@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void Click(View view){
-        Button button = (Button) findViewById(R.id.button);
+        Button button =  (Button) findViewById(R.id.button);
         button.setText("Thank you!");
     }
 }
