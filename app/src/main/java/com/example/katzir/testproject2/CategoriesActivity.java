@@ -21,7 +21,6 @@ public class CategoriesActivity extends ListActivity implements AdapterView.OnIt
     }
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        // TODO print selected
         Log.d("list",parent.getItemAtPosition(position).toString());
     }
 }
