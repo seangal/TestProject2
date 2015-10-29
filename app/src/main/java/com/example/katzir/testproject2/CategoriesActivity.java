@@ -1,6 +1,7 @@
 package com.example.katzir.testproject2;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,7 +25,10 @@ public class CategoriesActivity extends ListActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
-                Log.d("list", parent.getItemAtPosition(position).toString());
+                String text = parent.getItemAtPosition(position).toString();
+                Intent intent = new Intent(CategoriesActivity.this, MassageActivity.class);
+                intent.putExtra("selected-item", text);
+                startActivity(intent);
 
             }
         });
