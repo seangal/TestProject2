@@ -9,5 +9,5 @@
         android:id="@android:id/list"
         android:layout_centerHorizontal="true"
         android:divider="#CCCCCC"
-        android:dividerHeight="2px" />
+        android:dividerHeight="1dp" />
 </RelativeLayout>
