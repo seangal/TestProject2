@@ -18,7 +18,7 @@ public class CategoriesActivity extends ListActivity {
         setContentView(R.layout.activity_main);
 
         String[] strings = {"1","2","3"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(),android.R.layout.simple_list_item_1,strings);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getListView().getContext(), android.R.layout.simple_list_item_1, strings);
         getListView().setAdapter(adapter);
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
