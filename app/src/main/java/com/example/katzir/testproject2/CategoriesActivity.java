@@ -13,7 +13,7 @@ import android.view.MenuItem;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class CategoriesActivity extends AppCompatActivity {
     private ExpandableListView expandableListView;
 
     private Categories categories;
