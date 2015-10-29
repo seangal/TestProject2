@@ -14,20 +14,11 @@ import android.view.MenuItem;
 import java.util.List;
 
 public class CategoriesActivity extends AppCompatActivity {
-    private ExpandableListView expandableListView;
-
-    private Categories categories;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-
-        expandableListView = (ExpandableListView)findViewById(R.id.expandableListView);
-        categories=new Categories();
-        ExpandableListViewAdapter expandableListViewAdapter = new ExpandableListViewAdapter(getApplicationContext(), categories.parentHeaderInformation, categories.allChildItems);
-
-        expandableListView.setAdapter(expandableListViewAdapter);
     }
 
 
