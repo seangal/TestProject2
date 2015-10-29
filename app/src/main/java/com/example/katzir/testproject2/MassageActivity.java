@@ -18,6 +18,6 @@ public class MassageActivity extends AppCompatActivity {
 
         // fetch value from key-value pair and make it visible on TextView.
         String item = intent.getStringExtra("selected-item");
-        textView.setText("you selected " + item);
+        textView.setText("welcome, " + item);
     }
 }
