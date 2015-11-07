@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TestProject2</string>
+    <string name="first_screen_label">choose value</string>
+    <string name="search_results_label">Search Results</string>
 </resources>

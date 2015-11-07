@@ -12,16 +12,11 @@ public class MassageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        getActionBar().setTitle("Search Results");
         setContentView(R.layout.activity_massage);
         // get the intent from which this activity is called.
         Intent intent = getIntent();
 
         // fetch value from key-value pair and make it visible on TextView.
         String item = intent.getStringExtra("selected-item");
-
-
-
     }
-
 }

@@ -3,6 +3,8 @@ package com.example.katzir.testproject2;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -25,7 +27,6 @@ public class CategoriesActivity extends ListActivity {
                 Intent intent = new Intent(CategoriesActivity.this, MassageActivity.class);
                 intent.putExtra("selected-item", text);
                 startActivity(intent);
-
             }
         });
     }
