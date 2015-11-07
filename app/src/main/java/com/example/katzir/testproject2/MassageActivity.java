@@ -22,14 +22,13 @@ public class MassageActivity extends AppCompatActivity {
             "Drupal"
     } ;
     Integer[] imageId = {
-            R.drawable.image1,
-            R.drawable.image2,
-            R.drawable.image3,
-            R.drawable.image4,
-            R.drawable.image5,
-            R.drawable.image6,
-            R.drawable.image7
-
+            R.mipmap.image1,
+            R.mipmap.image2,
+            R.mipmap.image3,
+            R.mipmap.image4,
+            R.mipmap.image5,
+            R.mipmap.image6,
+            R.mipmap.image7
     };
 
     @Override
