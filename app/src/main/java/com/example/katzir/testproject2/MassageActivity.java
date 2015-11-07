@@ -17,15 +17,7 @@ import java.net.URL;
 
 public class MassageActivity extends AppCompatActivity {
     ListView list;
-    String[] web = {
-            "Google Plus",
-            "Twitter",
-            "Windows",
-            "Bing",
-            "Itunes",
-            "Wordpress",
-            "Drupal"
-    } ;
+    String[] web;
     Integer[] imageId = {
             R.mipmap.image1,
             R.mipmap.image2,
@@ -34,7 +26,6 @@ public class MassageActivity extends AppCompatActivity {
             R.mipmap.image5,
             R.mipmap.image6,
             R.mipmap.image7
-
     };
 
     @Override
