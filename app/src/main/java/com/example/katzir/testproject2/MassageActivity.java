@@ -25,10 +25,10 @@ public class MassageActivity extends AppCompatActivity {
             R.mipmap.image1,
             R.mipmap.image2,
             R.mipmap.image3,
-            R.mipmap.image1,
-            R.mipmap.image1,
-            R.mipmap.image1,
-            R.mipmap.image1
+            R.mipmap.image4,
+            R.mipmap.image5,
+            R.mipmap.image6,
+            R.mipmap.image7
     };
 
     @Override
