@@ -15,10 +15,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-
-
-
-
 public class MassageActivity extends AppCompatActivity {
     ListView list;
     String[] web = {
@@ -64,9 +60,6 @@ public class MassageActivity extends AppCompatActivity {
 
             }
         });
-
-
-
     }
     public static String getHTML(String urlToRead) throws Exception {
         StringBuilder result = new StringBuilder();
