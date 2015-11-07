@@ -51,15 +51,8 @@ public class MassageActivity extends AppCompatActivity {
                 CustomList(MassageActivity.this, web, imageId);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        getHTML("http://ebay.edy.co.il/search.php?string="+item);
 
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-                Toast.makeText(MassageActivity.this, "You Clicked at " + web[+position], Toast.LENGTH_SHORT).show();
-
-            }
-        });
     }
     public static String getHTML(String urlToRead) throws Exception {
         StringBuilder result = new StringBuilder();
