@@ -14,7 +14,6 @@ public class MassageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getActionBar().setTitle("Search Results");
         setContentView(R.layout.activity_massage);
-        textView = (TextView) findViewById(R.id.textView);
         // get the intent from which this activity is called.
         Intent intent = getIntent();
 
