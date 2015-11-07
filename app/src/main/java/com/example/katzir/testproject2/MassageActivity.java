@@ -20,5 +20,6 @@ public class MassageActivity extends AppCompatActivity {
         String item = intent.getStringExtra("selected-item");
         textView.setText("welcome, " + item);
 
+
     }
 }
