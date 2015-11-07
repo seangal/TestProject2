@@ -51,10 +51,13 @@ public class MassageActivity extends AppCompatActivity {
                 CustomList(MassageActivity.this, web, imageId);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
-        getHTML("http://ebay.edy.co.il/search.php?string="+item);
-
+        try{
+            String json = getHTML("http://ebay.edy.co.il/search.php?string="+item);
+        }
+        catch(Exception e){}
     }
-    public static String getHTML(String urlToRead) throws Exception {
+
+    public String getHTML(String urlToRead) throws Exception {
         StringBuilder result = new StringBuilder();
         URL url = new URL(urlToRead);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
