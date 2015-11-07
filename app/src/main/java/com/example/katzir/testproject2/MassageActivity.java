@@ -46,15 +46,15 @@ public class MassageActivity extends AppCompatActivity {
 
         // fetch value from key-value pair and make it visible on TextView.
         String item = intent.getStringExtra("selected-item");
-
+        try{
+            String json = getHTML("http://ebay.edy.co.il/search.php?string="+item+"&max_results=3");
+        }
+        catch(Exception e){}
         CustomList adapter = new
                 CustomList(MassageActivity.this, web, imageId);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
-        try{
-            String json = getHTML("http://ebay.edy.co.il/search.php?string="+item);
-        }
-        catch(Exception e){}
+
     }
 
     public String getHTML(String urlToRead) throws Exception {
